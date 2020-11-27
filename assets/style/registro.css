@@ -64,6 +64,7 @@ body{
 }
 #header .buscador{
 	display: inline-flex;
+	border-radius: 5px;
 	margin-top: 17px;
 }
 #header .buscador input{
@@ -100,6 +101,7 @@ body{
 	width: 50px;
 }
 #login fieldset{
+	width: auto;
 	text-align: center;
 	background-color: #7733FF;
 	border: solid 5px #3C08A3;
@@ -123,7 +125,23 @@ body{
 	align-content: center;
 	padding: 10px;
 }
+
+#login a{
+	color: white;
+}
+#login a:hover{
+	color: #3C08A3;
+}
+#login .condiciones{
+	display: inline-flex;
+	margin-bottom: 1em;
+}
+#login .condiciones input{
+	margin: 6px 0 0 4px;
+}
 #login button{
+	margin-left: 37%;
+	display: block;
 	background: #3C08A3;
 	color: white;
 	padding: 10px;
@@ -132,13 +150,6 @@ body{
 }
 #login button:hover{
 	background-color: #35098E;
-
-}
-#login a{
-	color: white;
-}
-#login a:hover{
-	color: #3C08A3;
 }
 /*====================
 	login-end
