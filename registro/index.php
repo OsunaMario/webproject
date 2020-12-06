@@ -44,7 +44,7 @@
 					</li>
 					<li>
 						<div class="user">
-							<a href="">
+							<a href="../index.php">
 								<img src="../assets/img/header/user.png">
 							</a>
 						</div>
@@ -91,7 +91,9 @@
 							Registrar
 						</button>
 					</form>
-				
+					<label>
+						¿Ya tienes una cuenta? Pulsa <a href="../">aqui</a>
+					</label>
 				</fieldset>
 			</div>
 		</div>

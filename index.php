@@ -1,9 +1,12 @@
+<!-- 
+VISTA HECHA POR EUDALDO
+-->
 <!DOCTYPE html>
 <html>
 <head>
 	<meta charset="utf-8">
 	<title>Shared film</title>
-	<link rel="stylesheet" type="text/css" href="assets/style/login.css? v=6">
+	<link rel="stylesheet" type="text/css" href="assets/style/login.css? v=7">
 </head>
 <body style="margin:0;">
 	<div id="container">
@@ -44,8 +47,8 @@
 					</li>
 					<li>
 						<div class="user">
-							<a href="registro/index.php">
-								<img src="assets/img/header/user.png">
+							<a href="">
+								<img src="assets/img/header/logout.png">
 							</a>
 						</div>
 					</li>
@@ -69,18 +72,18 @@
 					</legend>
 					<img src="assets/img/header/user.png">
 					<form>
-					<label>
-						Usuario
-					</label>
-					<input type="text" name="user" placeholder="User" required="">
-					<label>
-						Contraseña
-					</label>
-					<input type="password" name="password" placeholder="*****" required="">
-					<button>
-						Iniciar sesion
-					</button>
-				</form>
+						<label>
+							Usuario
+						</label>
+						<input type="text" name="user" placeholder="User" required="">
+						<label>
+							Contraseña
+						</label>
+						<input type="password" name="password" placeholder="*****" required="">
+						<button>
+							Iniciar sesion
+						</button>
+					</form>
 				<label>
 					¿No estas registrado? pulsa <a href="registro/index.php">aquí</a>
 				</label>

@@ -106,6 +106,7 @@ body{
 	background-color: #7733FF;
 	border: solid 5px #3C08A3;
 	border-radius: 20px;
+	box-shadow: 20px 20px 20px 20px rgb(0,0,0,0.7);
 }
 #login legend{
 	background-color: #7733FF;
@@ -139,11 +140,15 @@ body{
 #login .condiciones input{
 	margin: 6px 0 0 4px;
 }
+#login input{
+	margin-left: 19%;
+}
 #login button{
-	margin-left: 37%;
+	margin-left: 34%;
 	display: block;
 	background: #3C08A3;
 	color: white;
+	font-size: 14pt;
 	padding: 10px;
 	border-radius: 10px;
 	border:solid 3px #35098E;
@@ -169,7 +174,7 @@ body{
 	font-size: 10pt;
 }
 #footer .social-links{
-	width: 100%;
+	width: 30%;
 	margin-left: 35%;
 }
 #footer .social-links ul{

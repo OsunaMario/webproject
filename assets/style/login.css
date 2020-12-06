@@ -38,7 +38,7 @@ body{
 	width: 120px;
 }
 #header .links{
-	width: 45%;
+	width: 50%;
 	float: right;
 	margin-left: 10%;
 }
@@ -71,6 +71,8 @@ body{
 	padding: 7px;
 }
 #header .user{
+	display: inline-flex;
+	width: 70px;
 	margin-top: 17px;
 }
 /*====================
@@ -89,12 +91,10 @@ body{
 	align-content: center;
 }
 #login .container{
-	position: relative;
-	top: 10%;
-	left: 38%;
+	
 	width: fit-content;
 	
-	margin: 0;
+	margin-left: 37%;
 }
 #login img{
 	width: 50px;
@@ -104,12 +104,14 @@ body{
 	background-color: #7733FF;
 	border: solid 5px #3C08A3;
 	border-radius: 20px;
-}
+	box-shadow: 20px 20px 20px 20px rgb(0,0,0,0.7);
+} 
 #login legend{
 	background-color: #7733FF;
 	border: solid 5px #3C08A3;
 	border-bottom: none;
 	border-radius:5px;
+
 }
 #login form{
 	text-align: center;
@@ -158,7 +160,7 @@ body{
 	font-size: 10pt;
 }
 #footer .social-links{
-	width: 100%;
+	width: 30%;
 	margin-left: 35%;
 }
 #footer .social-links ul{
