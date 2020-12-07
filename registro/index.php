@@ -1,20 +1,17 @@
 <?php 
 
-	if (!isset($_SESSION)) {
-		session_start();
-	}
+include "../app/app.php";
 
 ?>
 <!DOCTYPE html>
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Shared film</title>
-	<link rel="stylesheet" type="text/css" href="../assets/style/registro.css? v=6">
+	<title>Registro</title>
+	<link rel="stylesheet" type="text/css" href="../assets/style/registro.css? v=7">
 </head>
-<body style="margin:0;">
-	<div id="container">
-		<!--==================
+<body style="margin: 0;">
+	<!--==================
 			Header-start
 		===================-->
 		<div id="header">
@@ -75,21 +72,8 @@
 						</label>
 					</legend>
 					<img src="../assets/img/header/user.png">
-					<h1>
-						<?php if (isset($_SESSION) && isset($_SESSION['error'])): ?>
-							<h3>
-								Error: <?= $_SESSION['error']?>
-							</h3>
-							<?php unset($_SESSION['error']) ?>
-						<?php endif ?>
-						<?php if (isset($_SESSION) && isset($_SESSION['success'])): ?>
-							<h3>
-								Correcto: <?= $_SESSION['success']?>
-							</h3>
-							<?php unset($_SESSION['success']) ?>
-						<?php endif ?>
-					</h1>
-					<form method="POST" action="../assets/app/authController.php">
+					<?php include "../layouts/alerts.template.php"; ?>
+					<form method="POST" action="../app/authController.php">
 						<label>
 							Nombre(s)
 						</label>
@@ -116,14 +100,14 @@
 							</label>
 							<input type="checkbox" name="terminos" required="">
 						</div>
-						<button>
-							Registrar
-						</button>
 						<input type="hidden" name="action" value="registro">
 						<input type="hidden" name="token" value="<?= $_SESSION['token'] ?>">
+						<button type="submit">
+							Registrar
+						</button>
 					</form>
 					<label>
-						¿Ya tienes una cuenta? Pulsa <a href="../">aqui</a>
+						¿Ya tienes una cuenta? Pulsa <a href="../login/">aqui</a>
 					</label>
 				</fieldset>
 			</div>
@@ -171,6 +155,5 @@
 		<!--==================
 			footer-end
 		===================-->
-	</div>
 </body>
 </html>

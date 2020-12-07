@@ -1,0 +1,166 @@
+body{
+	background-color: #7733FF;
+}
+/*=====================
+	var_nav-start
+=====================*/
+#var_nav{
+	width: 100%;
+	height: auto;
+	background-color: #3C08A3;
+	display: inline-flex;
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+#var_nav .logo{
+	width: 30%;
+
+}
+#var_nav .logo img{
+	margin-left: 10%;
+	width: 120px;
+}
+#var_nav .links{
+	width: 50%;
+	display: inline-flex;
+
+}
+#var_nav .links ul{
+	margin-left: 70%;
+	list-style: none;
+	display: inline-flex;
+}
+#var_nav .links ul li{
+	margin-left: 1em;
+}
+#var_nav .links ul li a{
+	text-decoration: none;
+	color: white;
+}
+#var_nav .links span{
+	color: #F0E318;
+}
+#var_nav .logout{
+	width: 15%;
+}
+#var_nav .logout img{
+	width: 30px;
+	margin-top: 20px;
+	margin-left: 75%;
+}
+/*=====================
+	var_nav-end
+=====================*/
+/*=====================
+		add-start
+=====================*/
+#add{
+	width: 35%;
+	height: 100%;
+	position: fixed;
+	top: 20%;
+	left: 0;
+}
+#add fieldset, legend{
+	background-color: #F0E318; 
+	border-radius: 15px;
+	border:solid 5px #3C08A3;
+}
+#add input,label,button{
+	display: block;
+}
+#add legend{
+	background-color:#F0E318; 
+	font-size: 12pt; 
+	padding: 10px;
+	color: black;
+}
+#add button{
+	background-color:#3C08A3;
+	padding: 5px; 
+	color: white;
+	text-align: center;
+}
+#add button:hover{
+	background-color: #260764;
+}
+#add input{
+	font-size: 12pt;
+}
+#add textarea{
+	font-size: 12pt;
+}
+/*=====================
+		add-end
+=====================*/
+/*=====================
+		edit-start
+=====================*/
+#edit{
+	width: 35%;
+	height: 100%;
+	position: fixed;
+	top: 20%;
+	left: 0;
+}
+#edit fieldset,legend{
+	background-color: #3C08A3; 
+	border-radius: 15px;
+	border:solid 5px #F0E318;
+}
+#edit label,legend{
+	color: white;
+}
+#edit input,label,button,textarea{
+	display: block;
+	border-radius: 15px;
+}
+#edit button{
+	background-color:#F0E318;
+	padding: 5px; 
+	text-align: center;
+}
+#edit button:hover{
+	background-color: #C1B60E;
+}
+#edit legend{
+	background-color:#3C08A3;
+	padding: 10px;  
+	font-size: 12pt; 
+}
+#edit textarea{
+	font-size: 12pt;
+}
+#edit input{
+	font-size: 12pt;
+}
+/*=====================
+		edit-end
+=====================*/
+/*=====================
+	categories-start
+=====================*/
+#categories{
+	width: 63%;
+	height: auto;
+	position:absolute; ;
+	top:65px;
+	left: 37%;
+}
+#categories table, th, td {
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+#categories th{
+	background-color: #3C08A3;
+	color: white;
+}
+#categories td{
+	text-align: justify;
+	background-color: white;
+	padding: 5px;
+}
+/*=====================
+	categories-end
+=====================*/
