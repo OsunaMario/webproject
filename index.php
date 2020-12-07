@@ -71,7 +71,7 @@ VISTA HECHA POR EUDALDO
 						</label>
 					</legend>
 					<img src="assets/img/header/user.png">
-					<form>
+					<form method="POST" action="../assets/app/authController.php">
 						<label>
 							Usuario
 						</label>
@@ -83,6 +83,8 @@ VISTA HECHA POR EUDALDO
 						<button>
 							Iniciar sesion
 						</button>
+						<input type="hidden" name="login" value="login">
+						<input type="hidden" name="token" value="<?= $_SESSION['token'] ?>">
 					</form>
 				<label>
 					¿No estas registrado? pulsa <a href="registro/index.php">aquí</a>

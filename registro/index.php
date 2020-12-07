@@ -1,3 +1,10 @@
+<?php 
+
+	if (!isset($_SESSION)) {
+		session_start();
+	}
+
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -68,15 +75,37 @@
 						</label>
 					</legend>
 					<img src="../assets/img/header/user.png">
-					<form>
+					<h1>
+						<?php if (isset($_SESSION) && isset($_SESSION['error'])): ?>
+							<h3>
+								Error: <?= $_SESSION['error']?>
+							</h3>
+							<?php unset($_SESSION['error']) ?>
+						<?php endif ?>
+						<?php if (isset($_SESSION) && isset($_SESSION['success'])): ?>
+							<h3>
+								Correcto: <?= $_SESSION['success']?>
+							</h3>
+							<?php unset($_SESSION['success']) ?>
+						<?php endif ?>
+					</h1>
+					<form method="POST" action="../assets/app/authController.php">
+						<label>
+							Nombre(s)
+						</label>
+						<input type="text" name="nombres" placeholder="Filomeno" required="">
+						<label>
+							Apellidos
+						</label>
+						<input type="text" name="apellidos" placeholder="Ancrascio" required="">
 						<label>
 							Usuario
 						</label>
-						<input type="text" name="user" placeholder="User" required="">
+						<input type="text" name="user" placeholder="Nickname" required="">
 						<label>
 							email
 						</label>
-						<input type="email" name="email" placeholder="email" required="">
+						<input type="email" name="email" placeholder="email@correo.com" required="">
 						<label>
 							Contraseña
 						</label>
@@ -90,6 +119,8 @@
 						<button>
 							Registrar
 						</button>
+						<input type="hidden" name="action" value="registro">
+						<input type="hidden" name="token" value="<?= $_SESSION['token'] ?>">
 					</form>
 					<label>
 						¿Ya tienes una cuenta? Pulsa <a href="../">aqui</a>
