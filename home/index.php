@@ -79,7 +79,7 @@
 				<ul>
 
 					<li>
-						<a href="./genero/accion">
+						<a href="../genero/accion">
 							<i class="fas fa-cube"></i>
 							Acción
 							<span class="cant-genre pull-right">2020</span>
@@ -87,7 +87,7 @@
 					</li>
 
 					<li>
-						<a href="./genero/animacion">
+						<a href="../genero/animacion">
 							<i class="fas fa-cube"></i>
 							Animación
 							<span class="cant-genre pull-right">7542</span>
@@ -95,7 +95,7 @@
 					</li>
 
 					<li>
-						<a href="./genero/anime">
+						<a href="../genero/anime">
 							<i class="fas fa-cube"></i>
 							Anime
 							<span class="cant-genre pull-right">4259</span>
@@ -103,7 +103,7 @@
 					</li>
 
 					<li>
-						<a href="./genero/artesmarciales">
+						<a href="../genero/artesmarciales">
 							<i class="fas fa-cube"></i>
 							Artes marciales
 							<span class="cant-genre pull-right">1025</span>
@@ -111,7 +111,7 @@
 					</li>
 
 					<li>
-						<a href="./genero/aventura">
+						<a href="../genero/aventura">
 							<i class="fas fa-cube"></i>
 							Aventura
 							<span class="cant-genre pull-right">628</span>
@@ -119,7 +119,7 @@
 					</li>
 
 					<li>
-						<a href="./genero/baile">
+						<a href="../genero/baile">
 							<i class="fas fa-cube"></i>
 							Baile
 							<span class="cant-genre pull-right">785</span>
@@ -127,7 +127,7 @@
 					</li>
 
 					<li>
-						<a href="./genero/belico">
+						<a href="../genero/belico">
 							<i class="fas fa-cube"></i>
 							Bélico
 							<span class="cant-genre pull-right">1540</span>
@@ -135,7 +135,7 @@
 					</li>
 
 					<li>
-						<a href="./genero/biografico">
+						<a href="../genero/biografico">
 							<i class="fas fa-cube"></i>
 							Biográfico
 							<span class="cant-genre pull-right">2304</span>
@@ -143,7 +143,7 @@
 					</li>
 
 					<li>
-						<a href="./genero/catastrofe">
+						<a href="../genero/catastrofe">
 							<i class="fas fa-cube"></i>
 							Catástrofe
 							<span class="cant-genre pull-right">4021</span>
@@ -151,7 +151,7 @@
 					</li>
 
 					<li>
-						<a href="./genero/cienciaficcion">
+						<a href="../genero/cienciaficcion">
 							<i class="fas fa-cube"></i>
 							Ciencia ficción
 							<span class="cant-genre pull-right">2978</span>
@@ -246,7 +246,88 @@
 						</ul>
 					</div>
 		</div>
+		<div class="main-right pull-left">
+			<div class="main-estrenos">
+				<div class="main-site">
+					<div class="message">
+						<h1 style="font-size: 20px;">
+							Anonymous Films
+						</h1>
+						<p>
+							Anonymous Films es el lugar perfecto para ver películas sin anuncios ni demoras, solo selecciona una categoría o año y elige tu título preferido, toma unas palomitas y algo de tomar, ¡Que te diviertas!
+						</p>
+					</div>
+				</div>
+				<div class="clear"></div>
+				<div class="title-detail pull-left">
+					<h2 class="pull-left">
+						Estrenos
+					</h2>
+					<span class="more pull-right">
+						<a href="./estrenos/">
+							Ver todo
+						</a>
+					</span>
+				</div>
+				<div class="clear"></div>
+				<div class="pelis-estrenos seccion-estrenos cinta slider">
+					<!-- <button class="cinta-prev flecha">
+						<i class="fas fa-arrow-left"></i>
+					</button> -->
+					<div class="cinta">
+						<div class="track">
+							<div class="item-pelicula pull-left cinta preview">
+								<a href="./movies">
+									<div class="item-picture">
+										<figure>
+											<img src="../assets/img/movies/001-cover.jpg" alt="Érase una vez un muñeco de nieve">
+											<span class="label-estreno">Estreno</span>
+											<span class="year text-center">2020</span>
+											<span class="res">1080p</span>
+										</figure>
+									</div>
+									<div class="item-title">
+										<p>Érase una vez un muñeco de nieve</p>
+									</div>
+								</a>
+							</div>
+							<div class="item-pelicula pull-left cinta preview">
+								<a href="./movies">
+									<div class="item-picture">
+										<figure>
+											<img src="../assets/img/movies/002-cover.jpg" alt="Enola Holmes">
+											<span class="label-estreno">Estreno</span>
+											<span class="year text-center">2020</span>
+											<span class="res">1080p</span>
+										</figure>
+									</div>
+									<div class="item-title">
+										<p>Enola Holmes</p>
+									</div>
+								</a>
+							</div>
+							<div class="item-pelicula pull-left cinta preview">
+								<a href="./movies">
+									<div class="item-picture">
+										<figure>
+											<img src="../assets/img/movies/003-cover.jpg" alt="Mulán">
+											<span class="label-estreno">Estreno</span>
+											<span class="year text-center">2020</span>
+											<span class="res">1080p</span>
+										</figure>
+									</div>
+									<div class="item-title">
+										<p>Mulán</p>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
+	<div class="footer"></div>
 </div>
 </body>
 </html>
