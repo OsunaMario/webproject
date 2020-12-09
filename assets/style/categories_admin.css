@@ -142,11 +142,14 @@ body{
 	categories-start
 =====================*/
 #categories{
-	width: 63%;
+	width: 60%;
 	height: auto;
 	position:absolute; ;
 	top:65px;
 	left: 37%;
+}
+#categories h1{
+	color: white;
 }
 #categories table, th, td {
 	border: 1px solid black;

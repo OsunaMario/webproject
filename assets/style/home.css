@@ -32,7 +32,6 @@ body{
 }
 
 .container{
-	max-width:1100px;
 	width:100%;
 	margin:0 auto;
 	position:relative;
@@ -340,7 +339,10 @@ h2 {
 }
 
 
-
+.main .main-center img{
+     width: 273px;
+     height: 364px;
+}
 
 
 .paleta-de-colores-para-proyecto-de-web-1-hex { color: #3C08A3; }

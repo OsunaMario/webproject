@@ -18,6 +18,9 @@
 		categories-Start
 	=====================-->
 	<div id="categories">
+		<h1>
+			Categorias
+		</h1>
 		<table>
 			<thead>
 				<th>
@@ -93,7 +96,7 @@
 		</div>
 	</div>
 	<!--====================
-		var_nav-Start
+		var_nav-end
 	=====================-->
 	<!--====================
 		add-Start
@@ -162,6 +165,9 @@
 	<!--====================
 		edit-end
 	=====================-->
+	<!--====================
+		destroy-start
+	=====================-->
 	<div id="eliminar">
 		<form id="destroyForm" action="../../category" method="POST">
 
@@ -171,7 +177,9 @@
 
 		</form>
 	</div>
-	
+	<!--====================
+		destroy-end
+	=====================-->
 	
 	<script type="text/javascript">
 		function edit(id,nombre,descripcion)

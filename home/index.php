@@ -1,3 +1,20 @@
+<?php 
+	include "../app/categoryController.php";
+	include "../app/movieController.php";
+	include "../app/app.php";
+	$categoryController = new CategoryController();
+	$movieController = new MovieController();
+
+	$categories = $categoryController->get();
+	$movies = $movieController->get();
+
+	if (isset($_SESSION)==false || 
+		isset($_SESSION['id'])==false){
+		
+		header("Location:../");
+	}
+
+?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -245,6 +262,14 @@
 							
 						</ul>
 					</div>
+		</div>
+		<div class="main-center">
+			<?php foreach ($movies as $movie): ?>
+				
+				<a href="">
+					<img src="<?=BASE_IMG.$movie['portada']?>">
+				</a>
+			<?php endforeach ?>
 		</div>
 	</div>
 </div>

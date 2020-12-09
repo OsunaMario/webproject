@@ -112,7 +112,7 @@ class AuthController
 						if ($user['rol']=="Administrador") {
 							header("Location:".BASE_PATH."/admin/categories");
 						}else{
-							header("Location:".BASE_PATH);
+							header("Location:".BASE_PATH."/home");
 
 						}
 

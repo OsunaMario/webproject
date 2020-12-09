@@ -26,37 +26,31 @@ include "../app/app.php";
 			<div class="links">
 				<ul>
 					<li>
-						<a href="home/index.php">
-							<img src="">
+						<a href="../home/index.php">
 							Inicio
 						</a>
 					</li>
 					<li>
-						<a href="">
-							<img src="">
+						<a href="../home/index.php">
 							Peliculas
 						</a>
 					</li>
 					<li>
 						<a href="">
-							<img src="">
 							Categorias
 						</a>
 					</li>
-					<li>
-						<div class="buscador">
-							<input type="text" name="buscador" placeholder="Buscar pelicula">
-						</div>
-					</li>
-					<li>
-						<div class="user">
-							<a href="">
-								<img src="../assets/img/header/logout.png">
-							</a>
-						</div>
-					</li>
-					
 				</ul>
+				<div class="buscador">
+					<input type="text" name="buscador" placeholder="Buscar pelicula">
+				</div>
+				<div class="user">
+					<a href="">
+						<img src="../assets/img/header/logout.png">
+					</a>
+				</div>
+
+				
 			</div>
 		</div>
 		<!--==================
@@ -74,7 +68,10 @@ include "../app/app.php";
 						</label>
 					</legend>
 					<img src="../assets/img/header/user.png">
-					<?php include "../layouts/alerts.template.php"; ?>
+					<div style="width: inherit;">
+						<?php include "../layouts/alerts.template.php"; ?>
+					</div>
+					
 					<form method="POST" action="../auth">
 						<label>
 							Usuario

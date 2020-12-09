@@ -13,7 +13,10 @@
 	}
 
 	if (!defined("BASE_PATH")) {
-		define("BASE_PATH", "http://localhost/webproject-propio/");
+		define("BASE_PATH", "http://localhost/webproject/");
+	}
+	if (!defined("BASE_IMG")) {
+		define("BASE_IMG","../assets/img/movies/");
 	}
 
 ?>
