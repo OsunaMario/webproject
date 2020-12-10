@@ -1,0 +1,120 @@
+/* Color Theme Swatches in Hex /
+.paleta-de-colores-para-proyecto-de-web-1-hex { color: #3C08A3; }
+.paleta-de-colores-para-proyecto-de-web-2-hex { color: #7733FF; }
+.paleta-de-colores-para-proyecto-de-web-3-hex { color: #6119F0; }
+.paleta-de-colores-para-proyecto-de-web-4-hex { color: #A39A00; }
+.paleta-de-colores-para-proyecto-de-web-5-hex { color: #F0E318; }
+
+/ Color Theme Swatches in RGBA /
+.paleta-de-colores-para-proyecto-de-web-1-rgba { color: rgba(60, 8, 163, 1); }
+.paleta-de-colores-para-proyecto-de-web-2-rgba { color: rgba(119, 51, 255, 1); }
+.paleta-de-colores-para-proyecto-de-web-3-rgba { color: rgba(97, 25, 240, 1); }
+.paleta-de-colores-para-proyecto-de-web-4-rgba { color: rgba(163, 154, 0, 1); }
+.paleta-de-colores-para-proyecto-de-web-5-rgba { color: rgba(240, 227, 24, 1); }
+
+/ Color Theme Swatches in HSLA 
+.paleta-de-colores-para-proyecto-de-web-1-hsla { color: hsla(260, 90, 33, 1); }
+.paleta-de-colores-para-proyecto-de-web-2-hsla { color: hsla(260, 100, 60, 1); }
+.paleta-de-colores-para-proyecto-de-web-3-hsla { color: hsla(260, 87, 51, 1); }
+.paleta-de-colores-para-proyecto-de-web-4-hsla { color: hsla(56, 100, 31, 1); }
+.paleta-de-colores-para-proyecto-de-web-5-hsla { color: hsla(56, 87, 51, 1); }
+*/
+
+.main .pelicula-view {
+    padding: 25px;
+    position: absolute;
+}
+
+.main .pelicula-info .pi-left {
+    width: 180px;
+    margin-right: 20px;
+}
+
+.main .pelicula-info .pi-left .poster {
+    width: 100%;
+    position: relative;
+}
+
+.main .pelicula-info .pi-left .poster img {
+    width: 180px;
+    height: 265px;
+}
+
+.main .pelicula-info .pi-right {
+    float: left;
+    width: calc(100% - 200px);
+    color: #bfd8c1;
+}
+
+.main .pelicula-info .pi-right .info-content {
+    font-size: 13px;
+}
+
+.main .pelicula-info .pi-right .info-content h1 {
+    color: #f1e206;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.main .pelicula-info .pi-right .info-content p {
+    margin-bottom: 10px;
+}
+
+.main .pelicula-info .pi-right .info-content .info-half {
+    float: left;
+    width: 50%;
+}
+
+.main .pelicula-info .pi-right .info-content p {
+    margin-bottom: 10px;
+}
+
+.main .pelicula-info .pi-right .info-content .content-type {
+    color: #fff;
+    font-weight: 700;
+}
+
+.main .pelicula-info .pi-right .info-content .sinopsis {
+    display: block;
+    margin-top: 5px;
+}
+
+.main .pelicula-player {
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.main .pelicula-player .player .video {
+    width: 100%;
+    min-height: 150px;
+    margin: 0 auto;
+    padding: 20px;
+    position: relative;
+}
+
+.main .pelicula-player .player .video .video-backgroud {
+    min-height: 440px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.paleta-de-colores-para-proyecto-de-web-1-hex { color: #3C08A3; }
+.paleta-de-colores-para-proyecto-de-web-2-hex { color: #7733FF; }
+.paleta-de-colores-para-proyecto-de-web-3-hex { color: #6119F0; }
+.paleta-de-colores-para-proyecto-de-web-4-hex { color: #A39A00; }
+.paleta-de-colores-para-proyecto-de-web-5-hex { color: #F0E318; }

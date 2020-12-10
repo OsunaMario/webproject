@@ -32,7 +32,6 @@ body{
 }
 
 .container{
-   /* max-width: 1080px;*/
 	width:100%;
 	margin:0 auto;
 	position:relative;
@@ -338,10 +337,6 @@ h2 {
     font-size: 13px;
     border-radius: 7px;
 }
-
-/*=======================
-      main-center
-=======================*/
 .main .main-center{
     margin-top: 5px;
     width: 76%;
@@ -364,10 +359,7 @@ h2 {
 .main .main-center .pelicula img:hover{
     width: 210px;
     height: 310px;
-} 
-/*=======================
-      main-center
-=======================*/
+}
 
 .paleta-de-colores-para-proyecto-de-web-1-hex { color: #3C08A3; }
 .paleta-de-colores-para-proyecto-de-web-2-hex { color: #7733FF; }
