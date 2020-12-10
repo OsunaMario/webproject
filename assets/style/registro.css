@@ -87,6 +87,7 @@ body{
 	margin:0;
 	background-image: url("../img/login/bg.jpg");
 	background-size: contain;
+	background-attachment: fixed;
 	align-content: center;
 }
 #login .container{

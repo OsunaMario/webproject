@@ -1,13 +1,17 @@
+<?php 
+
+include "../app/app.php";
+
+?>
 <!DOCTYPE html>
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Shared film</title>
-	<link rel="stylesheet" type="text/css" href="../assets/style/registro.css? v=6">
+	<title>Registro</title>
+	<link rel="stylesheet" type="text/css" href="../assets/style/registro.css? v=7">
 </head>
-<body style="margin:0;">
-	<div id="container">
-		<!--==================
+<body style="margin: 0;">
+	<!--==================
 			Header-start
 		===================-->
 		<div id="header">
@@ -68,15 +72,24 @@
 						</label>
 					</legend>
 					<img src="../assets/img/header/user.png">
-					<form>
+					<?php include "../layouts/alerts.template.php"; ?>
+					<form method="POST" action="../app/authController.php">
+						<label>
+							Nombre(s)
+						</label>
+						<input type="text" name="nombres" placeholder="Filomeno" required="">
+						<label>
+							Apellidos
+						</label>
+						<input type="text" name="apellidos" placeholder="Ancrascio" required="">
 						<label>
 							Usuario
 						</label>
-						<input type="text" name="user" placeholder="User" required="">
+						<input type="text" name="user" placeholder="Nickname" required="">
 						<label>
 							email
 						</label>
-						<input type="email" name="email" placeholder="email" required="">
+						<input type="email" name="email" placeholder="email@correo.com" required="">
 						<label>
 							Contraseña
 						</label>
@@ -87,12 +100,14 @@
 							</label>
 							<input type="checkbox" name="terminos" required="">
 						</div>
-						<button>
+						<input type="hidden" name="action" value="registro">
+						<input type="hidden" name="token" value="<?= $_SESSION['token'] ?>">
+						<button type="submit">
 							Registrar
 						</button>
 					</form>
 					<label>
-						¿Ya tienes una cuenta? Pulsa <a href="../">aqui</a>
+						¿Ya tienes una cuenta? Pulsa <a href="../login/">aqui</a>
 					</label>
 				</fieldset>
 			</div>
@@ -140,6 +155,5 @@
 		<!--==================
 			footer-end
 		===================-->
-	</div>
 </body>
 </html>

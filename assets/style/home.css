@@ -32,7 +32,6 @@ body{
 }
 
 .container{
-	/*max-width:1100px;*/
 	width:100%;
 	margin:0 auto;
 	position:relative;
@@ -251,7 +250,7 @@ input {
 }
 
 .main {
-    min-height: calc(100vh - 130px);
+    height: auto;
 }
 .main {
     color: #fff;
@@ -338,221 +337,28 @@ h2 {
     font-size: 13px;
     border-radius: 7px;
 }
-
-.main .main-right {
-     padding: 20px;
-     border-left: 1px solid #3e355054;
-}
-
-.message {
-    width: 80%;
-    max-width: 100%;
-    margin-bottom: 20px;
-    padding: 10px 15px;
-    font-size: 12px;
-    border-radius: 4px;
-    background: hsla(0,0%,100%,.23);
-}
-
-.clear {
-    clear: both;
-}
-
-.title-detail {
-    margin-bottom: 15px;
-    width: 100%;
-}
-
-.title-detail h2 {
-    font-size: 18px;
-    color: #fff;
-}
-
-.title-detail .more {
+.main .main-center{
+    margin-top: 5px;
+    width: 76%;
     float: right;
-    font-size: 15px;
-    font-weight: 700;
-}
-
-.title-detail .more a {
-    color: #fff;
-}
-
-.cinta, .slider {
-    position: relative;
-    display: block;
-}
-
-.slider {
-    box-sizing: border-box;
-    user-select: none;
-    touch-action: pan-y;
-}
-
-.slick-list {
-    overflow: hidden;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: 200px 200px 200px 200px;
+    grid-template-rows:auto;
+}  
+.main .main-center .pelicula{
+    width: fit-content;
     margin: 0;
-    padding: 0;
 }
-
-.cinta-next, .cinta-prev {
-    font-size: 30px;
-    top: 40%;
-    width: 45px;
-    height: 50px;
-    line-height: 50px;
-    color: #fff;
-    z-index: 1;
-    opacity: .6;
+.main .main-center .pelicula img{
+     width: 200px;
+     height: 300px;
+     border-radius: 15px;
+     filter: drop-shadow(0px 10px 10px black); 
 }
-.cinta-prev {
-    width: 30px;
-    left: -20px;
-}
-
-.flecha {
-    top: 47%;
-    border-width: 0px;
-}
-
-.cinta-next, .cinta-next:focus, .cinta-next:hover, .cinta-prev, .cinta-prev:focus, .cinta-prev:hover {
-    outline: none;
-    background: 0 0;
-}
-
-.cinta {
-    overflow: hidden;
-    margin: 0;
-    padding: 0;
-}
-
-.track {
-    position: relative;
-    top: 0;
-    left: 0;
-    display: block;
-}
-
-.item-pelicula {
-    width: 197.969px;
-    height: 272.384px;
-    min-height: 110px;
-    color: #fff;
-    margin-bottom: 15px;
-    margin-left: 7px;
-    margin-right: 7px;
-    font-size: 13px;
-    position: relative;
-    box-shadow: 0 0 10px 2px rgba(0,0,0,.5);
-    border-radius: 8px;
-}
-
-a:-webkit-any-link {
-    color: -webkit-link;
-    cursor: pointer;
-    text-decoration: underline;
-}
-
-.item-pelicula .item-picture {
-/*    border: 1px solid #0b151b;
-*/    border-radius: 8px;
-}
-
-.item-pelicula .item-picture figure img {
-    width: 197.969px;
-    height: 272.384px;
-    min-height: 110px;
-    border-radius: 8px;
-}
-
-.slide img {
-    display: block;
-}
-
-div .preview {
-    width: 197.969px;
-    height: 312.384px;
-}
-
-.item-pelicula .item-picture figure .year {
-    background: #41babb;
-    color: #fff;
-    position: absolute;
-    left: 0;
-    right: auto;
-    top: 0;
-    border-radius: 8px 0 8px 0;
-    bottom: auto;
-    padding: 2px 7px;
-    font-size: 13px;
-    font-weight: bold;
-}
-
-.item-pelicula .item-picture figure .res {
-    position: absolute;
-    top: 22px;
-    right: 8px;
-    background: #c1231b;
-    color: #FFF;
-    border-radius: 3px;
-    font-size: 11px;
-    padding: 2px 4px;
-    z-index: 11;
-    font-weight: bold;
-
-}
-
-.item-pelicula .item-picture figure .label-estreno {
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: auto;
-    bottom: auto;
-    border-radius: 0 8px 0 8px;
-    background: #5d1ca5;
-    color: #fff;
-    padding: 2px 7px;
-    font-size: 12px;
-    font-weight: bold;
-}
-
-.text-center {
-    text-align: center;
-}
-
-.item-pelicula .item-title {
-    padding: 5px 10px;
-    background: #0b151b;
-    width: 197.969px;
-    max-width: 197.969px;
-}
-
-.item-pelicula .item-title p {
-    /*font-weight: 700;*/
-    width: 197.969px;
-    min-height: 110px;
-    color: #fff;
-    vertical-align: middle;
-    height: 20px;
-    margin: auto;
-    display: block;
-    /*max-width: 100%;*/
-    font-size: 13px;
-    font-weight: bold;
-
-}
-
-
-
-
-
-
-
-.footer {
-    width: 100%;
-    background-color: #3C08A3;
-    height: 60px;
-    padding: 14px 20px;
+.main .main-center .pelicula img:hover{
+    width: 210px;
+    height: 310px;
 }
 
 .paleta-de-colores-para-proyecto-de-web-1-hex { color: #3C08A3; }

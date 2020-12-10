@@ -1,0 +1,186 @@
+body{
+	background-color: #7733FF;
+}
+/*=====================
+	var_nav-start
+=====================*/
+#var_nav{
+	width: 100%;
+	height: auto;
+	background-color: #3C08A3;
+	display: inline-flex;
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+#var_nav .logo{
+	width: 30%;
+
+}
+#var_nav .logo img{
+	margin-left: 10%;
+	width: 120px;
+}
+#var_nav .links{
+	width: 50%;
+	display: inline-flex;
+
+}
+#var_nav .links ul{
+	margin-left: 70%;
+	list-style: none;
+	display: inline-flex;
+}
+#var_nav .links ul li{
+	margin-left: 1em;
+}
+#var_nav .links ul li a{
+	text-decoration: none;
+	color: white;
+}
+#var_nav .links span{
+	color: #F0E318;
+}
+#var_nav .logout{
+	width: 15%;
+}
+#var_nav .logout img{
+	width: 30px;
+	margin-top: 20px;
+	margin-left: 75%;
+}
+/*=====================
+	var_nav-end
+=====================*/
+/*=====================
+		add-start
+=====================*/
+#add{
+	width: fit-content;
+	height: 100%;
+	position: fixed;
+	top: 10%;
+	left: 0;
+}
+#add fieldset, legend{
+	background-color: #F0E318; 
+	border-radius: 15px;
+	border:solid 5px #3C08A3;
+}
+#add input,label,button{
+	display: block;
+}
+#add legend{
+	background-color:#F0E318; 
+	font-size: 12pt; 
+	/*padding: 10px;*/
+	color: black;
+}
+#add button{
+	background-color:#3C08A3;
+	padding: 5px; 
+	color: white;
+	text-align: center;
+}
+#add button:hover{
+	background-color: #260764;
+}
+#add input{
+	font-size: 8pt;
+}
+#add textarea{
+	font-size: 8pt;
+}
+/*=====================
+		add-end
+=====================*/
+/*=====================
+		edit-start
+=====================*/
+#update{
+	width: fit-content;
+	height: 100%;
+	position: fixed;
+	top: 20%;
+	left: 0;
+}
+#update fieldset,legend{
+	background-color: #3C08A3; 
+	border-radius: 15px;
+	border:solid 5px #F0E318;
+}
+#update label,legend{
+	color: white;
+}
+#update input,label,button,textarea{
+	display: block;
+	border-radius: 15px;
+}
+#update button{
+	background-color:#F0E318;
+	padding: 5px; 
+	text-align: center;
+}
+#update button:hover{
+	background-color: #C1B60E;
+}
+#update legend{
+	background-color:#3C08A3;
+	padding: 10px;  
+	font-size: 12pt; 
+}
+#update textarea{
+	font-size: 12pt;
+}
+#update input{
+	font-size: 12pt;
+}
+/*=====================
+		edit-end
+=====================*/
+/*=====================
+	movies-start
+=====================*/
+#movies{
+	width: 30%;
+	height: auto;
+	position:absolute; 
+	top:65px;
+	left: 65%;
+}
+#movies .movie{
+	background-color: #3C08A3;
+	background-color: #3C08A3; 
+	border-radius: 15px;
+	border:solid 5px #F0E318;
+	width: 315px;
+}
+#movies .content{
+	display: inline-flex;
+}
+#movies .movie fieldset{
+	display: inline;
+}
+#movies .movie legend{
+	width: fit-content;
+}
+#movies .movie .movie_id{
+	padding: 10px;
+}
+#movies .movie .movie_titulo{
+	color: white;
+	width: 6em;
+	margin-right: 10px;
+}
+#movies .movie .movie_portada img{
+	width: 100px;
+}
+#movies .movie .movie_acciones{
+	margin-left: 10px;
+}
+#movies .movie .movie_acciones button{
+	padding: 10px;
+}	
+/*=====================
+	movies-end
+=====================*/
