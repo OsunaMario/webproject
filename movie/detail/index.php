@@ -4,7 +4,8 @@
 	<meta charset="utf-8">
 	<meta name="description" content="Miles de Películas y series Online en calidad HD, Castellano y Subtitulado sin cortes. Somos DuodePelis Oficial, ver series y peliculas online gratis.">
 	<title>DuoPelis - Ver Películas Online Gratis</title>
-	<link rel="stylesheet" type="text/css" href="../assets/style/home.css">
+	<link rel="stylesheet" type="text/css" href="../../assets/style/home.css">
+	<link rel="stylesheet" type="text/css" href="../../assets/style/detail.css">
 	<script src="https://kit.fontawesome.com/820f15aa26.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -12,7 +13,7 @@
 	<div class="header">
 		<div class="header-logo">
 			<a href="" title="DuodePelis">
-				<img src="../assets/img/header/logo.png">
+				<img src="../../assets/img/header/logo.png">
 			</a>
 		</div>
 		<div class="header-right pull-right">
@@ -39,7 +40,7 @@
 				</ul>
 			</div>
 			<div id="menu-user" class="header-user pull-right">
-				<img class="user_active" src="../assets/img/profile.png" height="32">
+				<img class="user_active" src="../../assets/img/profile.png" height="32">
 				<i class="fas fa-chevron-down">
 				</i>
 				
@@ -247,83 +248,51 @@
 					</div>
 		</div>
 		<div class="main-right pull-left">
-			<div class="main-estrenos">
-				<div class="main-site">
-					<div class="message">
-						<h1 style="font-size: 20px;">
-							Anonymous Films
-						</h1>
-						<p>
-							Anonymous Films es el lugar perfecto para ver películas sin anuncios ni demoras, solo selecciona una categoría o año y elige tu título preferido, toma unas palomitas y algo de tomar, ¡Que te diviertas!
-						</p>
+			<div class="pelicula-view">
+				<div class="pelicula-info">
+					<div class="pi-left pull-left">
+						<div class="poster">
+							<img id="cover" src="../../assets/img/movies/002-cover.jpg">
+						</div>
 					</div>
-				</div>
-				<div class="clear"></div>
-				<div class="title-detail pull-left">
-					<h2 class="pull-left">
-						Estrenos
-					</h2>
-					<span class="more pull-right">
-						<a href="./estrenos/">
-							Ver todo
-						</a>
-					</span>
-				</div>
-				<div class="clear"></div>
-				<div class="pelis-estrenos seccion-estrenos cinta slider">
-					<!-- <button class="cinta-prev flecha">
-						<i class="fas fa-arrow-left"></i>
-					</button> -->
-					<div class="cinta">
-						<div class="track">
-							<div class="item-pelicula pull-left cinta preview">
-								<a href="./movies">
-									<div class="item-picture">
-										<figure>
-											<img src="../assets/img/movies/001-cover.jpg" alt="Érase una vez un muñeco de nieve">
-											<span class="label-estreno">Estreno</span>
-											<span class="year text-center">2020</span>
-											<span class="res">1080p</span>
-										</figure>
-									</div>
-									<div class="item-title">
-										<p>Érase una vez un muñeco de nieve</p>
-									</div>
-								</a>
-							</div>
-							<div class="item-pelicula pull-left cinta preview">
-								<a href="./movies">
-									<div class="item-picture">
-										<figure>
-											<img src="../assets/img/movies/002-cover.jpg" alt="Enola Holmes">
-											<span class="label-estreno">Estreno</span>
-											<span class="year text-center">2020</span>
-											<span class="res">1080p</span>
-										</figure>
-									</div>
-									<div class="item-title">
-										<p>Enola Holmes</p>
-									</div>
-								</a>
-							</div>
-							<div class="item-pelicula pull-left cinta preview">
-								<a href="./movies">
-									<div class="item-picture">
-										<figure>
-											<img src="../assets/img/movies/003-cover.jpg" alt="Mulán">
-											<span class="label-estreno">Estreno</span>
-											<span class="year text-center">2020</span>
-											<span class="res">1080p</span>
-										</figure>
-									</div>
-									<div class="item-title">
-										<p>Mulán</p>
-									</div>
-								</a>
-							</div>
+					<div class="pi-right">
+						<div class="info-content">
+							<h1>Enola Holmes</h1>
+							<p>
+								<span class="content-type">Título: </span>
+								<span>Enola Holmes</span>
+								<p class="info-half">
+									<span class="content-type">Año: </span>
+									<span>2020</span>
+								</p>
+								<p class="info-half">
+									<span class="content-type">Duración: </span>
+									<span>123 mins.</span>
+								</p>
+								<div class="clear"></div>
+								<p>
+									<span class="content-type">Género: </span>
+									<span>Acción</span>
+								</p>
+								<p>
+									<span class="content-type">Sinópsis: </span>
+									<span class="sinopsis">Cuando Enola, la hermana adolescente de Sherlock Holmes, descubre que su madre ha desaparecido, no duda en emprender su búsqueda. Tendrá que emplear todas sus dotes detectivescas para que su famoso hermano no dé con ella. Y para desentrañar la conspiración en torno a un misterioso y joven lord.</span>
+								</p>
+							</p>
 						</div>
 					</div>
 				</div>
+
+				<div class="pelicula-player">
+					<div class="video">
+						<div class="video-background"></div>
+						<div class="video-html hiddenVisible"></div>
+					</div>
+				</div>
+
+
+
+
 			</div>
 		</div>
 	</div>
