@@ -13,7 +13,7 @@
 		
 		header("Location:../");
 	}
-
+	$total_peliculas_genero=0;
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -22,7 +22,7 @@
 	<meta name="description" content="Miles de Películas y series Online en calidad HD, Castellano y Subtitulado sin cortes. Somos DuodePelis Oficial, ver series y peliculas online gratis.">
 	<title>DuoPelis - Ver Películas Online Gratis</title>
 	<link rel="stylesheet" type="text/css" href="../assets/style/home.css">
-	<script src="https://kit.fontawesome.com/820f15aa26.js" crossorigin="anonymous"></script>
+	<!-- <script src="https://kit.fontawesome.com/820f15aa26.js" crossorigin="anonymous"></script> -->
 </head>
 <body>
 <div class="container">
@@ -92,91 +92,25 @@
 	<div class="main">
 		<div class="main-left">
 			<div class="genres">
-				<h2>Géneros de películas</h2>
+				<h2>Peliculas por categorias</h2>
 				<ul>
-
-					<li>
-						<a href="./genero/accion">
-							<i class="fas fa-cube"></i>
-							Acción
-							<span class="cant-genre pull-right">2020</span>
-						</a>
-					</li>
-
-					<li>
-						<a href="./genero/animacion">
-							<i class="fas fa-cube"></i>
-							Animación
-							<span class="cant-genre pull-right">7542</span>
-						</a>
-					</li>
-
-					<li>
-						<a href="./genero/anime">
-							<i class="fas fa-cube"></i>
-							Anime
-							<span class="cant-genre pull-right">4259</span>
-						</a>
-					</li>
-
-					<li>
-						<a href="./genero/artesmarciales">
-							<i class="fas fa-cube"></i>
-							Artes marciales
-							<span class="cant-genre pull-right">1025</span>
-						</a>
-					</li>
-
-					<li>
-						<a href="./genero/aventura">
-							<i class="fas fa-cube"></i>
-							Aventura
-							<span class="cant-genre pull-right">628</span>
-						</a>
-					</li>
-
-					<li>
-						<a href="./genero/baile">
-							<i class="fas fa-cube"></i>
-							Baile
-							<span class="cant-genre pull-right">785</span>
-						</a>
-					</li>
-
-					<li>
-						<a href="./genero/belico">
-							<i class="fas fa-cube"></i>
-							Bélico
-							<span class="cant-genre pull-right">1540</span>
-						</a>
-					</li>
-
-					<li>
-						<a href="./genero/biografico">
-							<i class="fas fa-cube"></i>
-							Biográfico
-							<span class="cant-genre pull-right">2304</span>
-						</a>
-					</li>
-
-					<li>
-						<a href="./genero/catastrofe">
-							<i class="fas fa-cube"></i>
-							Catástrofe
-							<span class="cant-genre pull-right">4021</span>
-						</a>
-					</li>
-
-					<li>
-						<a href="./genero/cienciaficcion">
-							<i class="fas fa-cube"></i>
-							Ciencia ficción
-							<span class="cant-genre pull-right">2978</span>
-						</a>
-					</li>
-					<div class="genre-more pull-right">
-						<a href="#">Ver más</a>
-					</div>
+					<?php foreach ($categories as $categoria): ?>
+						<li>
+							<a >
+								<i class="fas fa-cube"></i>
+								<?=$categoria['nombre']?>
+								<?php foreach ($movies as $movie): ?>
+										<?php if ($movie['categoria']==$categoria['id']): ?>
+											<?php $total_peliculas_genero+=1; ?>
+										<?php endif ?>
+									<?php endforeach ?>
+								<span class="cant-genre pull-right">
+								<?=$total_peliculas_genero?>
+								</span>
+							</a>
+						</li>
+					<?php $total_peliculas_genero=0; ?>
+					<?php endforeach ?>
 				</ul>
 			</div>
 			
@@ -256,19 +190,16 @@
 								<a href="./peliculas-2003">2003</a>
 							</li>
 							
-							<li>
-								<a href="./peliculas-2002">2002</a>
-							</li>
-							
 						</ul>
 					</div>
 		</div>
 		<div class="main-center">
 			<?php foreach ($movies as $movie): ?>
-				
-				<a href="">
-					<img src="<?=BASE_IMG.$movie['portada']?>">
-				</a>
+				<div class="pelicula">
+					<a  href="../details/?titulo=<?= $movie['titulo']?>">
+						<img src="<?=BASE_IMG.$movie['portada']?>">
+					</a>
+				</div>
 			<?php endforeach ?>
 		</div>
 	</div>

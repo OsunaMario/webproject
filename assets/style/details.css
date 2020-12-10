@@ -4,20 +4,6 @@
 .paleta-de-colores-para-proyecto-de-web-3-hex { color: #6119F0; }
 .paleta-de-colores-para-proyecto-de-web-4-hex { color: #A39A00; }
 .paleta-de-colores-para-proyecto-de-web-5-hex { color: #F0E318; }
-
-/ Color Theme Swatches in RGBA /
-.paleta-de-colores-para-proyecto-de-web-1-rgba { color: rgba(60, 8, 163, 1); }
-.paleta-de-colores-para-proyecto-de-web-2-rgba { color: rgba(119, 51, 255, 1); }
-.paleta-de-colores-para-proyecto-de-web-3-rgba { color: rgba(97, 25, 240, 1); }
-.paleta-de-colores-para-proyecto-de-web-4-rgba { color: rgba(163, 154, 0, 1); }
-.paleta-de-colores-para-proyecto-de-web-5-rgba { color: rgba(240, 227, 24, 1); }
-
-/ Color Theme Swatches in HSLA 
-.paleta-de-colores-para-proyecto-de-web-1-hsla { color: hsla(260, 90, 33, 1); }
-.paleta-de-colores-para-proyecto-de-web-2-hsla { color: hsla(260, 100, 60, 1); }
-.paleta-de-colores-para-proyecto-de-web-3-hsla { color: hsla(260, 87, 51, 1); }
-.paleta-de-colores-para-proyecto-de-web-4-hsla { color: hsla(56, 100, 31, 1); }
-.paleta-de-colores-para-proyecto-de-web-5-hsla { color: hsla(56, 87, 51, 1); }
 */
 * {
     margin: 0;
@@ -30,13 +16,9 @@ body{
 	background-color: #181919;
     font-family: Open Sans,sans-serif;
 }
-
-.container{
-   /* max-width: 1080px;*/
-	width:100%;
-	margin:0 auto;
-	position:relative;
-}
+/*====================
+    header-star
+====================*/
 
 .header {
     width: 100%;
@@ -249,128 +231,54 @@ input {
 .text-center {
     text-align: center;
 }
+/*====================
+    header-end
+====================*/
 
-.main {
-    height: auto;
-}
-.main {
-    color: #fff;
-    background-color: #7733FF;
-}
 
-.main .main-left {
-    width: 235px;
-    float: left;
-    padding: 20px;
-    min-height: 300px;
-    height: auto;
+/*====================
+    info_pelicula-star
+====================*/
+#info-pelicula{
+    width: 100%;
+    height: 400px;
+    background-color: #240E67;
+    display: inline-flex;
 }
-
-.main .main-left .genres {
-    max-height: 368px;
-    transition: max-height .15s ease-out;
-    overflow: hidden;
-    position: relative;
-    margin-bottom: 15px;
-}
-
-.main .main-left h2 {
-    font-size: 13px;
-    margin-bottom: 15px;
-}
-
-h2 {
+#info-pelicula .titulo-portada{
+    width: 30%;
+    padding-left: 1em;
     display: block;
-    font-size: 1.5em;
-    margin-block-start: 0.83em;
-    margin-block-end: 0.83em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-weight: bold;
+    text-align: center;
 }
+#info-pelicula .titulo-portada .titulo{
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+#info-pelicula .titulo-portada .portada img{
+    width: 200px;
+    height: 300px;
+    border-radius: 15px;
+}
+#info-pelicula .info{
+    padding-left: 1em;
+    padding-top: 3em;
+    color: white;
+    width: 100%;
+    height: 150px;
+}
+#info-pelicula .descripcion{
+    width: 100%;
+    color: white;
+    font-size: 10pt;
+}
+/*====================
+    info_pelicula-end
+====================*/
 
-.main .main-left .genres ul li a {
-    color: hsla(0,0%,100%,.9);
-    display: block;
-    margin-bottom: 5px;
-    border-bottom: 1px solid hsla(0,0%,100%,.1);
-    padding-bottom: 4px;
-    font-size: 13px;
-}
-
-.main .main-left .genres ul li a i {
-    margin-right: 8px;
-}
-
-.main .main-left .genres ul li a {
-    color: hsla(0,0%,100%,.9);
-    display: block;
-    margin-bottom: 5px;
-    border-bottom: 1px solid hsla(0,0%,100%,.1);
-    padding-bottom: 4px;
-    font-size: 13px;
-}
-
-.main .main-left .genres ul li a .cant-genre {
-    font-size: 15px;
-}
-
-.main .main-left .genre-more {
-    margin-bottom: 15px;
-    font-size: 12px;
-    font-weight: 700;
-}
-
-.main .main-left .genre-more a {
-    color: #fff;
-}
-
-.main .main-left .years ul li {
-    float: left;
-    margin-right: 8px;
-    margin-bottom: 15px;
-}
-
-.main .main-left .years ul a {
-    padding: 5px 13px;
-    background-color: rgba(0,0,0,.25);
-    color: hsla(0,0%,100%,.75);
-    font-size: 13px;
-    border-radius: 7px;
-}
-
-/*=======================
-      main-center
-=======================*/
-.main .main-center{
-    margin-top: 5px;
-    width: 76%;
-    float: right;
-    display: grid;
-    grid-gap: 1rem;
-    grid-template-columns: 200px 200px 200px 200px;
-    grid-template-rows:auto;
-}  
-.main .main-center .pelicula{
-    width: fit-content;
-    margin: 0;
-}
-.main .main-center .pelicula img{
-     width: 200px;
-     height: 300px;
-     border-radius: 15px;
-     filter: drop-shadow(0px 10px 10px black); 
-}
-.main .main-center .pelicula img:hover{
-    width: 210px;
-    height: 310px;
-} 
-/*=======================
-      main-center
-=======================*/
-
-.paleta-de-colores-para-proyecto-de-web-1-hex { color: #3C08A3; }
+/*.paleta-de-colores-para-proyecto-de-web-1-hex { color: #3C08A3; }
 .paleta-de-colores-para-proyecto-de-web-2-hex { color: #7733FF; }
 .paleta-de-colores-para-proyecto-de-web-3-hex { color: #6119F0; }
 .paleta-de-colores-para-proyecto-de-web-4-hex { color: #A39A00; }
-.paleta-de-colores-para-proyecto-de-web-5-hex { color: #F0E318; }
+.paleta-de-colores-para-proyecto-de-web-5-hex { color: #F0E318; }*/
